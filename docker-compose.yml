@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: green-api-tg:local
+    container_name: green-api-tg
+    ports:
+      - '8089:80'
+    restart: unless-stopped
