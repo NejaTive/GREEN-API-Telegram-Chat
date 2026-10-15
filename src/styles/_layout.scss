@@ -1,0 +1,30 @@
+@use 'variables' as *;
+
+.app-shell {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .app-shell {
+    grid-template-columns: 1fr;
+
+    &:not(:has(.empty-window)) .sidebar {
+      display: none;
+    }
+
+    &:has(.empty-window) .chat-window {
+      display: none;
+    }
+  }
+
+  .back-btn {
+    display: inline-flex !important;
+  }
+}

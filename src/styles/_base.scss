@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(42, 159, 216, 0.18),
+      transparent 36%
+    ),
+    linear-gradient(160deg, var(--bg), var(--bg-deep));
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: var(--accent-strong);
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(145deg, #5bb8e0, #2a9fd8);
+  color: white;
+  font-weight: 700;
+}
+
+.form-error,
+.send-error {
+  color: var(--danger);
+  background: rgba(194, 59, 59, 0.08);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,24 @@
+:root {
+  --bg: #dce5ef;
+  --bg-deep: #c5d2e0;
+  --surface: #ffffff;
+  --surface-muted: #f3f6fa;
+  --sidebar: #eaf0f6;
+  --text: #1b2430;
+  --text-muted: #6b7787;
+  --accent: #2a9fd8;
+  --accent-strong: #1f86b8;
+  --outgoing: #dff3ff;
+  --danger: #c23b3b;
+  --border: #d5dee8;
+  --shadow: 0 18px 50px rgba(27, 36, 48, 0.12);
+
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.45;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+$breakpoint-mobile: 860px;
