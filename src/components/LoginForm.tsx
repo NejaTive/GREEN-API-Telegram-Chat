@@ -57,6 +57,7 @@ export function LoginForm({ onSuccess }: LoginFormProps) {
           <label>
             <span>apiTokenInstance</span>
             <input
+              type="password"
               value={apiTokenInstance}
               onChange={(e) => setApiTokenInstance(e.target.value)}
               required
